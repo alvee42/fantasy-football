@@ -6,16 +6,17 @@ pandas>=1.3.0
 numpy>=1.21.0
 
 # Machine learning
-tensorflow>=2.10.0
 scikit-learn>=1.0.0
 
 # Visualization
 matplotlib>=3.4.0
 seaborn>=0.11.0
 
-# Web scraping (only needed for data_collection.ipynb - NOT USED in main workflow)
+# Web scraping (only needed for data_collection.ipynb)
 beautifulsoup4>=4.9.0
 
-# Note: For NVIDIA CUDA GPU support, you may need to install:
-# pip install tensorflow[and-cuda]
-# Ensure CUDA Toolkit and cuDNN are properly installed on your system
+# Jupyter notebook support
+ipykernel
+
+# Note: PyTorch must be installed separately with CUDA support:
+# pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
